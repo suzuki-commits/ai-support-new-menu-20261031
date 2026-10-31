@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>継続課題と新メニュー提案</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --blue: #0068b6;
+        --blue-soft: #e6f0f8;
+        --red: #fb4113;
+        --red-soft: #ffede7;
+        --ink: #221714;
+        --ink2: #4a3f3b;
+        --line: #ddd6d2;
+        --bg: #fbf9f7;
+        --card: #ffffff;
+        --green: #1e7a4c;
+        --green-soft: #e7f4ec;
+        --amber: #9a6200;
+        --amber-soft: #fff4dc;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family:
+          "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", sans-serif;
+        font-size: 18px;
+        line-height: 1.85;
+      }
+      .wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px 80px;
+      }
+      header.hero {
+        background: var(--ink);
+        color: #fff;
+        padding: 56px 0 48px;
+        margin-bottom: 40px;
+      }
+      header.hero .wrap {
+        padding-bottom: 0;
+      }
+      .kicker {
+        font-size: 15px;
+        letter-spacing: 0.18em;
+        color: #ffb59e;
+        font-weight: 700;
+      }
+      h1 {
+        word-break: keep-all;
+        overflow-wrap: anywhere;
+        font-size: 38px;
+        line-height: 1.4;
+        margin: 12px 0 16px;
+        font-weight: 900;
+      }
+      .hero p {
+        font-size: 18px;
+        color: #ede6e2;
+        margin: 0;
+      }
+      .meta {
+        margin-top: 20px;
+        font-size: 15px;
+        color: #cfc5c0;
+      }
+      h2 {
+        font-size: 28px;
+        line-height: 1.45;
+        margin: 64px 0 8px;
+        padding-left: 16px;
+        border-left: 8px solid var(--blue);
+      }
+      h2 .num {
+        color: var(--blue);
+        margin-right: 8px;
+      }
+      .lead {
+        font-size: 19px;
+        color: var(--ink2);
+        margin: 0 0 24px;
+      }
+      h3 {
+        font-size: 24px;
+        margin: 36px 0 12px;
+        line-height: 1.5;
+      }
+      p {
+        margin: 0 0 16px;
+      }
+      strong {
+        font-weight: 700;
+      }
+      .mark {
+        background: linear-gradient(transparent 60%, #ffd9cc 60%);
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 24px 28px;
+        margin: 16px 0;
+      }
+      .conclusion {
+        border: 2px solid var(--red);
+        background: #fff;
+      }
+      .conclusion h2 {
+        margin-top: 0;
+        border-left-color: var(--red);
+      }
+      .conclusion ol {
+        margin: 0;
+        padding-left: 1.4em;
+      }
+      .conclusion li {
+        margin: 0 0 14px;
+        font-size: 19px;
+      }
+      .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .grid4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+      .type {
+        border-radius: 12px;
+        padding: 22px 24px;
+      }
+      .type.a {
+        background: var(--blue-soft);
+        border: 1px solid #b9d3ea;
+      }
+      .type.b {
+        background: var(--red-soft);
+        border: 1px solid #f7c2b2;
+      }
+      .type h4 {
+        font-size: 22px;
+        margin: 0 0 8px;
+      }
+      .type .tag {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 99px;
+        margin-bottom: 8px;
+      }
+      .type.a .tag {
+        background: var(--blue);
+        color: #fff;
+      }
+      .type.b .tag {
+        background: var(--red);
+        color: #fff;
+      }
+      .tbl {
+        overflow-x: auto;
+        margin: 16px 0;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        background: #fff;
+        font-size: 17px;
+        min-width: 640px;
+      }
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 12px 14px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #f3eeeb;
+        font-weight: 700;
+      }
+      td.c {
+        text-align: center;
+      }
+      .badge {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 1px 8px;
+        border-radius: 6px;
+        margin-right: 6px;
+        white-space: nowrap;
+        vertical-align: 2px;
+      }
+      .b-pub {
+        background: var(--blue);
+        color: #fff;
+      }
+      .b-pri {
+        background: #2f5d8a;
+        color: #fff;
+      }
+      .b-int {
+        background: var(--green);
+        color: #fff;
+      }
+      .b-sec {
+        background: var(--amber-soft);
+        color: var(--amber);
+        border: 1px solid #e8c77a;
+      }
+      .b-hyp {
+        background: #eee;
+        color: #333;
+        border: 1px solid #bbb;
+      }
+      .fact {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .fact:last-child {
+        border-bottom: none;
+      }
+      .fact .big {
+        flex: 0 0 150px;
+        font-size: 32px;
+        font-weight: 900;
+        color: var(--blue);
+        line-height: 1.2;
+      }
+      .fact .big.red {
+        color: var(--red);
+      }
+      .fact .big small {
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        color: var(--ink2);
+      }
+      .fact .txt {
+        flex: 1;
+      }
+      .src {
+        font-size: 15px;
+        color: var(--ink2);
+      }
+      .src a {
+        color: var(--blue);
+      }
+      .analogy {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 16px;
+        align-items: stretch;
+        margin: 20px 0;
+      }
+      .analogy .box {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 20px 22px;
+      }
+      .analogy .box h4 {
+        margin: 0 0 6px;
+        font-size: 21px;
+      }
+      .analogy .arrow {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        color: var(--red);
+        font-weight: 900;
+      }
+      .menu {
+        background: #fff;
+        border: 3px solid var(--blue);
+        border-radius: 16px;
+        padding: 28px 30px;
+        margin: 24px 0;
+      }
+      .menu .name {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.35;
+        margin: 4px 0 8px;
+      }
+      .menu .promise {
+        font-size: 21px;
+        font-weight: 700;
+        color: var(--red);
+        margin: 0 0 16px;
+      }
+      .comp {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin: 16px 0;
+      }
+      .comp div {
+        background: var(--blue-soft);
+        border-radius: 10px;
+        padding: 16px 18px;
+      }
+      .comp b {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 4px;
+        color: var(--blue);
+      }
+      .ladder {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 16px 0;
+      }
+      .step {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 12px;
+        align-items: center;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 14px 18px;
+      }
+      .step .p {
+        font-weight: 900;
+        font-size: 20px;
+      }
+      .step.new {
+        border: 2px solid var(--red);
+        background: var(--red-soft);
+      }
+      .step.new .p {
+        color: var(--red);
+      }
+      .note {
+        font-size: 17px;
+        color: var(--ink2);
+        background: #f3eeeb;
+        border-radius: 8px;
+        padding: 12px 16px;
+        margin: 12px 0;
+      }
+      ul.check {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul.check li {
+        padding: 10px 0 10px 36px;
+        position: relative;
+        border-bottom: 1px dashed var(--line);
+      }
+      ul.check li:last-child {
+        border-bottom: none;
+      }
+      ul.check li::before {
+        content: "✓";
+        position: absolute;
+        left: 6px;
+        top: 10px;
+        color: var(--green);
+        font-weight: 900;
+      }
+      .timeline {
+        border-left: 4px solid var(--blue);
+        margin: 16px 0 16px 8px;
+        padding-left: 24px;
+      }
+      .timeline div {
+        margin: 0 0 18px;
+        position: relative;
+      }
+      .timeline div::before {
+        content: "";
+        position: absolute;
+        left: -34px;
+        top: 8px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--blue);
+      }
+      .timeline b {
+        color: var(--blue);
+      }
+      .decide {
+        background: var(--amber-soft);
+        border: 1px solid #e8c77a;
+        border-radius: 12px;
+        padding: 20px 24px;
+      }
+      .sources ol {
+        padding-left: 1.4em;
+        font-size: 17px;
+      }
+      .sources li {
+        margin-bottom: 8px;
+        word-break: break-all;
+      }
+      footer {
+        margin-top: 56px;
+        font-size: 15px;
+        color: var(--ink2);
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+      }
+      @media (max-width: 720px) {
+        body {
+          font-size: 17px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+        h3 {
+          font-size: 21px;
+        }
+        .grid2,
+        .grid4,
+        .comp {
+          grid-template-columns: 1fr;
+        }
+        .analogy {
+          grid-template-columns: 1fr;
+        }
+        .analogy .arrow {
+          justify-content: center;
+          transform: rotate(90deg);
+        }
+        .fact {
+          flex-direction: column;
+          gap: 4px;
+        }
+        .fact .big {
+          flex: none;
+        }
+        .step {
+          grid-template-columns: 1fr;
+        }
+        .menu {
+          padding: 22px 18px;
+        }
+        .menu .name {
+          font-size: 26px;
+        }
+        .card {
+          padding: 20px 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <div class="kicker">STRATEGY MEMO ｜ 2026-10-31</div>
+        <h1>
+          「学んだら自分でやる」<wbr />時代の<br />AI支援は、<wbr />何を売るべきか
+        </h1>
+        <p>
+          企業304社・経営者88人にAI活用支援を提供するA社の、継続課題の分析と新メニュー案
+        </p>
+        <div class="meta">
+          根拠の種類を色で区別しています：<span class="badge b-pub"
+            >公的統計</span
+          ><span class="badge b-pri">調査（一次確認済）</span
+          ><span class="badge b-int">A社の社内記録</span
+          ><span class="badge b-sec">二次情報</span
+          ><span class="badge b-hyp">仮説</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="card conclusion">
+        <h2>結論</h2>
+        <ol>
+          <li>
+            <strong>「継続しない」には2種類あります。</strong
+            >自走できるようになって離れる<strong>「卒業型」</strong>と、自走の手前で止まって消える<strong>「失速型」</strong>です。A社の記録では、解約・休眠・単発の17社のうち、費用や条件で離れたとはっきり分かるのは3社だけでした。残りの多くは失速型です。
+          </li>
+          <li>
+            <strong>卒業型は止める必要がありません。</strong
+            >「教える」商品は、うまくいくほど不要になります。問題は、卒業した経営者が次に買えるものが「月20万円の顧問を続ける」か「何も買わない」の二択しかないことです。
+          </li>
+          <li>
+            <strong
+              >新メニューの主力は、自分でAIを使う経営者向けの保守・点検契約です（仮称「AI車検」）。</strong
+            >作るのは顧客で、A社は「止めない・漏らさない・効果を測る」側に回ります。自分で運転する人が増えるほど、教習所の仕事は減りますが、車検と整備の仕事は増えます。Claude
+            Code や Codex の普及は、この商品にとって追い風です。
+          </li>
+          <li>
+            <strong>失速型には、新商品ではなく既存契約の運用を直します。</strong
+            >来週からできる5つの対策を第5章にまとめました。
+          </li>
+        </ol>
+      </section>
+
+      <h2>
+        <span class="num">1</span
+        >今のメニューは、全部「教える・作る」を売っている
+      </h2>
+      <p class="lead">
+        添付資料の4メニューを「何を売っているか」「どう終わるか」で並べると、構造上の弱点が見えます。
+      </p>
+      <div class="tbl">
+        <table>
+          <tr>
+            <th>メニュー</th>
+            <th>価格</th>
+            <th>売っているもの</th>
+            <th>うまくいった時の終わり方</th>
+          </tr>
+          <tr>
+            <td>生成AI活用支援パック</td>
+            <td>月20万／50万円（6か月）</td>
+            <td>業務の棚卸し、活用レクチャー、設計・開発</td>
+            <td>仕組みができたら6か月で完了</td>
+          </tr>
+          <tr>
+            <td>生成AI活用顧問</td>
+            <td>年240万円（月換算20万円）</td>
+            <td>CEO・CIOとのマンツーマン相談と実践</td>
+            <td>経営者が自分で使えるようになると、相談が減る</td>
+          </tr>
+          <tr>
+            <td>CEO AI BOOTCAMP</td>
+            <td>初年度480万円</td>
+            <td>経営者専用AI環境の集中構築と伴走</td>
+            <td>環境が完成すると、伴走の必要性が下がる</td>
+          </tr>
+          <tr>
+            <td>AI経営者クラブβ</td>
+            <td>月5万円（年60万円）</td>
+            <td>出会い・発信・学び・場</td>
+            <td>出会いと発信の実利が続けば、続く</td>
+          </tr>
+        </table>
+      </div>
+      <p>
+        上の3つは、価値の中心が<strong>知識と技術の移転</strong>です。顧客が上達するほど、A社から買う理由が減ります。教習所が、免許を取った人に通い続けてもらえないのと同じ構造です。
+      </p>
+      <p>
+        クラブβの資料には<strong>「『学び』は続けにくい。でも『成果』は手放せない」</strong>とあります。この一文が、そのまま答えの方向を示しています。続けてもらうには、学びではなく、<span
+          class="mark"
+          >卒業した後も手放せない成果</span
+        >を売る必要があります。
+      </p>
+
+      <h2><span class="num">2</span>継続しない理由を、記録から分解する</h2>
+      <p class="lead">
+        A社の議事録と顧客マスタを集計した過去の分析（2026年7〜10月）から、離脱の理由を拾い直しました。
+      </p>
+
+      <div class="grid2">
+        <div class="type a">
+          <span class="tag">卒業型</span>
+          <h4>自分でできるようになって離れる</h4>
+          <p>
+            ご質問の「ある程度学んだら自分でやりたい」はこちらです。記録にも、契約の節目で「月額の定額」を提示したところ、先方は「2〜3か月に1回のスポット」を希望し、折り合わずに離れた例があります。
+          </p>
+          <p>
+            <strong>これは支援が成功した結果です。</strong
+            >止めるのではなく、卒業後に買える商品を用意します（第4章）。
+          </p>
+        </div>
+        <div class="type b">
+          <span class="tag">失速型</span>
+          <h4>自走の手前で止まって消える</h4>
+          <p>
+            宿題が進まない → 定例が情報共有会になる → 間隔が空く →
+            いつの間にか消える。この流れが記録上は多数です。
+          </p>
+          <p>
+            <strong>こちらは支援の運用で防げます。</strong
+            >新商品は要りません（第5章）。
+          </p>
+        </div>
+      </div>
+
+      <h3>記録から分かったこと</h3>
+      <div class="card">
+        <div class="fact">
+          <div class="big red">3<small>／17社</small></div>
+          <div class="txt">
+            <span class="badge b-int">社内記録</span
+            >解約・休眠・単発の17社のうち、費用や条件で止まったと<strong>はっきり記録がある</strong>のは3社だけ。残りは「宿題未消化
+            → 情報共有会化 → 間隔が空く → 消える」の同じ流れでした。
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big red">0<small>／10社</small></div>
+          <div class="txt">
+            <span class="badge b-int">社内記録</span
+            >休眠した継続先10社の最終回の議事録に、<strong>先方の成果の数字</strong>が1つもありませんでした。<strong>次回の日付</strong>も10社すべてで未記載です。成果が見えない支援は、続ける理由が説明できません。
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">5<small>／10社</small></div>
+          <div class="txt">
+            <span class="badge b-int">社内記録</span
+            >休眠側の半数は、毎回「新しいツールの紹介」が中心でした。もう半数は、PC・アカウント・社内のセキュリティ設定といった<strong>環境の問題</strong>で、価値が出る前に時間を使い切っていました（重複あり）。
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">4<small>社すべて</small></div>
+          <div class="txt">
+            <span class="badge b-int">社内記録</span
+            >解約した4社は、いずれも更新判断が「社内で検討します」で終わり、回答期限は記録されていませんでした。継続の形や料金を、契約の最終回で初めて出した例もあります。
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">4<small>／9社</small></div>
+          <div class="txt">
+            <span class="badge b-int">社内記録</span
+            >反対に、<strong>継続した側</strong>では9社中4社が「納品ではなく、自分で直せるようになる」をゴールにしていました。<strong>自走そのものは離脱の原因ではない</strong>ということです。
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">1<small>社が復活</small></div>
+          <div class="txt">
+            <span class="badge b-int">社内記録</span
+            >休眠から戻った1社では、<strong>先方が自分で作ったものを持ってきて、A社がレビューする</strong>形に変わっていました。「まず自分で進める」と線を引かれても、関係は切れていません。新メニューの原型はこの関係です。
+          </div>
+        </div>
+      </div>
+      <div class="note">
+        注記：「休眠」は議事録で60日以上接触がないことからの推定で、ChatworkやMessengerのやり取りは見ていません。ご質問の「304社・88人」と顧客マスタ（87社）は数え方が違うため、継続率や解約率は計算していません。
+      </div>
+
+      <h2>
+        <span class="num">3</span
+        >市場の変化：「教わる」需要は縮み、「自分で回す」ための需要が膨らむ
+      </h2>
+      <p class="lead">
+        「Claude Code や Codex
+        を自分で使っているから支援は要らない」という声は、時流と合っています。ただ、自分で使う人が増えると、別の困りごとも増えます。
+      </p>
+
+      <h3>3-1　使う人は、この1〜2年で一気に増えた</h3>
+      <div class="card">
+        <div class="fact">
+          <div class="big">86.4<small>%</small></div>
+          <div class="txt">
+            <span class="badge b-pub">公的統計</span
+            >何らかの業務で生成AIを使っている日本企業の割合。2024年度調査の55.2%から大きく上がり、米国（90.9%）・ドイツ（91.6%）との差も縮まりました。
+            <div class="src">
+              総務省『令和8年版
+              情報通信白書』（企業調査：従業員10人以上・管理職以上 515人）
+            </div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">34.5<small>%</small></div>
+          <div class="txt">
+            <span class="badge b-pri">調査</span
+            >「活用している」と答えた企業（10,312社）。大企業46.5%・中小企業32.4%・小規模企業28.0%と、規模で差があります。活用企業の86.7%が「効果あり」と回答しています。
+            <div class="src">
+              帝国データバンク「生成AIに関する企業の動向調査」2026年3月
+            </div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big">27→39<small>%</small></div>
+          <div class="txt">
+            <span class="badge b-pri">調査</span>Claude
+            の会話のうち、細かく指示せず<strong>仕事を丸ごと任せる使い方</strong>の割合。9か月で27%から39%に増えました（2025年の公表値。その後の報告で比率が戻った可能性もあります）。
+            <div class="src">Anthropic Economic Index</div>
+          </div>
+        </div>
+        <div class="fact">
+          <div class="big" style="font-size: 24px">非エンジニアへ</div>
+          <div class="txt">
+            <span class="badge b-sec">二次情報</span>Claude Code
+            は2025〜26年の冬に、プログラマー以外にも広がったとされています。非技術者向けの「Claude
+            Cowork」も出ました。
+          </div>
+        </div>
+      </div>
+      <p>
+        <strong>示唆：</strong
+        >AI自身がAIの使い方を教えてくれるので、「操作を教える」価値は下がり続けます<span
+          class="badge b-hyp"
+          >仮説</span
+        >。「研修を受けたが使いこなせない」という需要は、今後縮んでいきます。
+      </p>
+
+      <h3>3-2　自分で使うほど増える、5つの困りごと</h3>
+      <div class="tbl">
+        <table>
+          <tr>
+            <th style="width: 22%">困りごと</th>
+            <th>根拠</th>
+          </tr>
+          <tr>
+            <td><strong>① 事故が怖い</strong><br />権限・漏洩・削除</td>
+            <td>
+              <span class="badge b-pri">調査</span
+              >AIが書いたコードは、テスト課題の<strong>45%</strong>でセキュリティ上の欠陥を含んでいました（Veracode
+              2025、100超のモデルで検証）。<br />
+              <span class="badge b-sec">二次情報</span
+              >AIエージェントが本番データベースを消した事例（Replit・2025年）、Claude
+              Code
+              がホームフォルダを丸ごと削除した事例が報じられています。原因は「権限が広すぎた」「バックアップが同じ場所にあった」が共通です。<br />
+              <span class="badge b-sec">二次情報</span
+              >会社が認めていないAIを業務で使っている管理職は<strong>46.5%</strong>（AI白書2026）。
+            </td>
+          </tr>
+          <tr>
+            <td><strong>② 止まる・壊れる</strong><br />更新・設定・連携</td>
+            <td>
+              <span class="badge b-int">社内記録</span
+              >A社の議事録217件では、「Claude Code
+              が止まった」「設定で詰まった」に関する記載が52件と17件ありました（3社分）。<br />
+              <span class="badge b-sec">二次情報</span>Gartner
+              は、AIエージェントのプロジェクトの40%超が2027年末までに中止されると予測しています。理由は「コストの増大」「事業価値が不明確」「リスク管理の不足」です（2025年6月）。
+            </td>
+          </tr>
+          <tr>
+            <td><strong>③ 効果が測れない</strong></td>
+            <td>
+              <span class="badge b-sec">二次情報</span
+              >MITの報告では、生成AIに取り組む組織の95%で、計測できる損益への効果が出ていませんでした（「6か月以内に数字で出る損益」という狭い定義での集計です）。<br />
+              <span class="badge b-int">社内記録</span
+              >休眠した継続先の最終回では、先方の成果の数字が10社すべてで記録されていませんでした（第2章）。
+            </td>
+          </tr>
+          <tr>
+            <td><strong>④ 正しいか分からない</strong></td>
+            <td>
+              <span class="badge b-pri">調査</span
+              >企業の懸念の1位は「情報の正確性」で<strong>50.4%</strong>（帝国データバンク）。<br />
+              <span class="badge b-pri">調査</span
+              >開発者の46%がAIの正確さを信用しておらず、信用する33%を上回りました。66%が「ほぼ正しいが、少し違う答え」に困っています（Stack
+              Overflow 2025、4.9万人）。
+            </td>
+          </tr>
+          <tr>
+            <td><strong>⑤ 社内に広がらない</strong></td>
+            <td>
+              <span class="badge b-pri">調査</span
+              >懸念の2位は「専門人材・ノウハウ不足」<strong>41.3%</strong>、3位は「活用すべき業務の範囲」<strong>40.0%</strong>（帝国データバンク）。<br />
+              <span class="badge b-sec">二次情報</span
+              >生成AIを使う企業でも、3割弱は組織としての取り組みがない（白書の報道。見出しのみ確認）。
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p>
+        加えて、国の<strong>「AI事業者ガイドライン」第1.2版</strong>（総務省・経産省、2026年3月31日）は、対象をAIエージェントまで広げ、重要な判断や社外への働きかけの前に<strong>人が確認する工程</strong>を設けることを求めています<span
+          class="badge b-pub"
+          >公的資料</span
+        >。法的拘束力はありませんが、取引先から確認されるようになれば、中小企業の経営者も無関係ではいられません。
+      </p>
+
+      <h3>3-3　まとめ：教習所から整備工場へ</h3>
+      <div class="analogy">
+        <div class="box">
+          <h4>これまでの需要</h4>
+          <p style="margin: 0">
+            「AIの使い方を教えてほしい」<br />＝教習所。免許を取れば卒業する。
+          </p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="box" style="border: 2px solid var(--red)">
+          <h4>これから増える需要</h4>
+          <p style="margin: 0">
+            「自分で使っているAIを、安全に止めずに回し、効果を示したい」<br />＝車検・整備・ロードサービス。運転者が増えるほど増える。
+          </p>
+        </div>
+      </div>
+      <p>
+        <span class="badge b-hyp">仮説</span
+        >この領域には、まだ担い手がいません。AI研修会社は「教える」で終わります。システム会社の保守は、社長が自分のPCで作ったAI環境までは見ません。セキュリティ会社は大企業向けで高額です。<strong>中小企業の経営者が自分で組んだAI環境を、定期的に見てくれる相手</strong>が空いています。市場規模のデータはないため、第6章の手順で確かめる前提です。
+      </p>
+
+      <h2><span class="num">4</span>新メニュー案：AI車検（仮称）</h2>
+      <p class="lead">
+        自分で Claude Code や Codex
+        を使う経営者のための、AI環境の保守・点検契約です。
+      </p>
+
+      <div class="menu">
+        <div class="kicker" style="color: var(--blue)">NEW MENU ｜ 主力案</div>
+        <div class="name">
+          AI車検 ── 自分で使う経営者の<br />「AI環境の保守・点検契約」
+        </div>
+        <p class="promise">
+          作るのは御社。止めない・漏らさない・効果を測るのはA社。
+        </p>
+        <p>
+          <strong>対象：</strong
+          >顧問・Bootcamp・支援パックを卒業した経営者／Claude Code や Codex
+          を自分で使っている経営者（クラブβ会員を含む）
+        </p>
+        <div class="comp">
+          <div>
+            <b>① 月次点検</b
+            >読み取り専用の自己診断を顧客側で実行し、結果をA社が確認します。見るのは、権限の広さ、秘密情報の置き場所、バックアップの有無と場所、自動実行の一覧と失敗状況、AIの利用料、新モデルや料金改定の影響です。結果は赤・黄・緑の点検票と直し方で返します。
+          </div>
+          <div>
+            <b>② 駆け込み復旧</b
+            >AIや自動化が止まった・詰まったときの窓口です。営業日48時間以内に一次回答します。社内記録で最も多い困りごと（「止まった」「設定で詰まった」）にそのまま応えます。
+          </div>
+          <div>
+            <b>③ 本番投入前レビュー</b
+            >経営者や社員が作った自動化、スキル、社外に出す文面を、使い始める前にA社が確認します。ガイドラインが求める「人の確認工程」を外部に持つ形です。休眠から戻った1社の関係を商品にしたものです。
+          </div>
+          <div>
+            <b>④ 四半期の成果報告</b
+            >時間・件数・商談数など、最初に決めた指標を、導入前と同じ物差しで測ります。幹部会議でそのまま使える1枚にまとめ、「続ける理由」を数字で残します。
+          </div>
+        </div>
+      </div>
+
+      <h3>価格の案と、既存メニューとのすみ分け</h3>
+      <div class="ladder">
+        <div class="step">
+          <div class="p">CEO AI BOOTCAMP</div>
+          <div>初年度480万円 ── 集中して作る</div>
+        </div>
+        <div class="step">
+          <div class="p">生成AI活用顧問</div>
+          <div>年240万円（月換算20万円） ── 教わりながら使う</div>
+        </div>
+        <div class="step new">
+          <div class="p">AI車検 整備プラン</div>
+          <div>
+            <strong>月10万円（案）</strong> ──
+            ①〜④すべて。駆け込み月4件・レビュー月4件・CIOと月1回30分
+          </div>
+        </div>
+        <div class="step new">
+          <div class="p">AI車検 点検プラン</div>
+          <div>
+            <strong>月5万円（案）</strong> ──
+            ①と②（月1件）、モデル更新の影響のお知らせ
+          </div>
+        </div>
+        <div class="step">
+          <div class="p">AI経営者クラブβ</div>
+          <div>月5万円 ── 出会い・発信・学び（自社環境の保守は含まない）</div>
+        </div>
+      </div>
+      <ul class="check">
+        <li>
+          <strong>卒業後の受け皿：</strong
+          >顧問をやめる人の選択肢が「20万円か、ゼロか」から「20万・10万・5万・ゼロ」になります。スポット希望で離れた例は、この段があれば残れた可能性があります。
+        </li>
+        <li>
+          <strong>共食いの防止：</strong
+          >AI車検は、顧問・Bootcamp・支援パックの契約期間中は申し込めない形にします（満了・卒業後のみ）。
+        </li>
+        <li>
+          <strong>クラブβとの関係：</strong
+          >クラブβは「人と学び」、AI車検は「自社のAI環境の保守」で中身が重なりません。クラブβ会員には点検プランを割引で付ける（例：合計で月8万円）形が自然です。
+        </li>
+        <li>
+          <strong>スポット希望への対応：</strong
+          >月額を嫌う人には「駆け込み3回券」（6か月有効）のような回数券も用意できます。
+        </li>
+      </ul>
+
+      <h3>なぜA社が提供できるのか</h3>
+      <ul class="check">
+        <li>
+          A社自身が、スキル165・エージェント31・自動実行15本・外部連携9系統（2026年8月時点）を日常業務で運用しています。権限の制限、失敗の検知と自動復旧、週次の点検を自社で回しているので、点検項目は机上の空論ではなく、運用の実地から作れます（「15.4人分」の実測と同じ環境です）。
+        </li>
+        <li>
+          CEOとCIOの2人体制に加え、AI専門家100名超のネットワークがあります。
+        </li>
+        <li>
+          企業304社・経営者88人の卒業生が、最初の見込み客です。新規開拓をしなくても検証できます。
+        </li>
+      </ul>
+
+      <h3>責任の範囲（契約で明記すること）</h3>
+      <ul class="check">
+        <li>
+          点検は<strong>読み取り専用</strong>です。設定の変更は顧客自身が行うか、承認を得たうえで同席して行います。
+        </li>
+        <li>
+          顧客のデータや秘密情報はA社に持ち出しません。共有するのは診断結果の要約だけです。
+        </li>
+        <li>
+          点検は助言であり、事故が起きないことは保証しません。賠償の上限は月額料金の範囲とします。
+        </li>
+      </ul>
+
+      <h3>市場のニーズとの対応</h3>
+      <div class="tbl">
+        <table>
+          <tr>
+            <th>困りごと（第3章）</th>
+            <th>AI車検のどこで応えるか</th>
+          </tr>
+          <tr>
+            <td>① 事故が怖い</td>
+            <td>
+              ①月次点検（権限・秘密情報・バックアップ）＋③本番投入前レビュー
+            </td>
+          </tr>
+          <tr>
+            <td>② 止まる・壊れる</td>
+            <td>②駆け込み復旧＋①のモデル・料金改定の影響確認</td>
+          </tr>
+          <tr>
+            <td>③ 効果が測れない</td>
+            <td>④四半期の成果報告</td>
+          </tr>
+          <tr>
+            <td>④ 正しいか分からない</td>
+            <td>③本番投入前レビュー（社外に出る文面・数字の確認）</td>
+          </tr>
+          <tr>
+            <td>⑤ 社内に広がらない</td>
+            <td>
+              ③で社員の作ったものを見る。本格展開は下の「組織展開」へつなぐ
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>主力にしなかった案（既存の器に載せる）</h3>
+      <div class="tbl">
+        <table>
+          <tr>
+            <th>案</th>
+            <th>扱い</th>
+            <th>理由</th>
+          </tr>
+          <tr>
+            <td>組織展開（社長のAI環境を社員へ移す）</td>
+            <td>
+              既存の支援パックの中身を組み替え、「卒業後の次の一手」として出す
+            </td>
+            <td>
+              人材不足41.3%・業務範囲40.0%という需要は大きい。ただ、価格も枠組みも支援パックで足りるため、新商品にはしない
+            </td>
+          </tr>
+          <tr>
+            <td>上級者コミュニティ（作ったものの共有会）</td>
+            <td>クラブβに「実装共有会」を足す</td>
+            <td>自走した経営者ほど、他社の実例を見たがる。器はすでにある</td>
+          </tr>
+          <tr>
+            <td>成果に応じた課金</td>
+            <td>AI車検の④が回ってから検討</td>
+            <td>成果の測り方が決まっていないと、料金の根拠を作れない</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2>
+        <span class="num">5</span>失速型への対策：既存の契約で来週からできる5つ
+      </h2>
+      <p class="lead">
+        新商品を作る前に、今の契約の運用で防げる離脱があります。どれも費用はかかりません。
+      </p>
+      <div class="tbl">
+        <table>
+          <tr>
+            <th>対策</th>
+            <th>記録上の根拠</th>
+          </tr>
+          <tr>
+            <td>
+              <strong
+                >1.
+                契約満了の2〜3回前に「卒業後の選択肢」を出し、回答期限を決める</strong
+              ><br />継続／整備プラン／点検プラン／回数券
+            </td>
+            <td>
+              継続の形や料金を最終回で初めて出した例があり、解約した4社はすべて期限のない「社内で検討」で終わっていた
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>2. 毎回の定例で、先方の成果の数字を1つ記録する</strong>
+            </td>
+            <td>休眠した10社の最終回すべてで、成果の数字がなかった</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>3. 宿題の向きを逆にする</strong
+              ><br />先方が作ってきたものを、A社がレビューする
+            </td>
+            <td>
+              休眠から戻った1社はこの形。継続した側では9社中4社が「自分で直せる」をゴールにしていた
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>4. 定例の主題を「新ツールの紹介」にしない</strong
+              ><br />先方の業務テーマを固定する
+            </td>
+            <td>休眠側の半数が、毎回新ツール紹介の型だった</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>5. 最初の2週間を「環境開通期間」にする</strong
+              ><br />PC・アカウント・権限の問題を先に片付ける
+            </td>
+            <td>休眠側の半数が、環境の問題で価値が出る前に止まっていた</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2><span class="num">6</span>確かめ方と撤退の基準</h2>
+      <p class="lead">
+        市場規模のデータがないため、作り込む前に小さく確かめます。
+      </p>
+      <div class="timeline">
+        <div>
+          <b>〜2週間：</b
+          >解約・休眠先と、卒業が近い経営者の5人に15分ずつ聞く。「自分で使い始めて困ったこと」と「月いくらなら払うか」の2点です。
+        </div>
+        <div>
+          <b>〜1か月：</b
+          >A社自身の運用ルールから、点検票の第1版（30項目程度）と、読み取り専用の自己診断の手順を作る。
+        </div>
+        <div>
+          <b>〜3か月：</b
+          >顧問・Bootcampの卒業生3人に、2か月の無償パイロットを行う（点検2回＋駆け込み対応）。
+        </div>
+        <div>
+          <b>判定：</b
+          >3人中2人以上が有料での継続を希望すれば正式化します。正式化から6か月で契約が10社に届かなければ縮小し、クラブβの特典に格下げします。
+        </div>
+      </div>
+      <div class="note">
+        <span class="badge b-hyp">計算例</span
+        >規模感の参考です。卒業生のうち30社が点検プラン（月5万円）、10社が整備プラン（月10万円）に入った場合、月250万円・年3,000万円です。加入数は仮定で、根拠のある見込みではありません。
+      </div>
+
+      <div class="decide">
+        <h3 style="margin-top: 0">A社が決める必要があること</h3>
+        <ul class="check">
+          <li>価格（月5万・10万円は案です）と、クラブβとのセット価格</li>
+          <li>CIOの稼働の上限（駆け込み対応の件数と回答時間に直結します）</li>
+          <li>責任範囲の契約文言（読み取り専用・持ち出しなし・賠償上限）</li>
+          <li>名称（「AI車検」は社内の仮称です）</li>
+        </ul>
+      </div>
+
+      <section class="sources">
+        <h2><span class="num">7</span>出典</h2>
+        <ol>
+          <li>
+            総務省『令和8年版 情報通信白書』生成AIの業務利用状況　<a
+              href="https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r08/html/nd121130.html"
+              >https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r08/html/nd121130.html</a
+            >
+          </li>
+          <li>
+            宣伝会議
+            AdverTimes「企業利用86.4%でも3割弱は『組織的な取り組みなし』」2026-07-29　<a
+              href="https://www.advertimes.com/20260729/article552212/"
+              >https://www.advertimes.com/20260729/article552212/</a
+            >
+          </li>
+          <li>
+            帝国データバンク「生成AIに関する企業の動向調査（2026年3月）」　<a
+              href="https://www.tdb.co.jp/report/economic/20260514-genai/"
+              >https://www.tdb.co.jp/report/economic/20260514-genai/</a
+            >
+          </li>
+          <li>
+            Anthropic Economic Index　<a
+              href="https://www.anthropic.com/economic-index"
+              >https://www.anthropic.com/economic-index</a
+            >
+          </li>
+          <li>
+            Wikipedia「Claude (language model)」（二次情報）　<a
+              href="https://en.wikipedia.org/wiki/Claude_(language_model)"
+              >https://en.wikipedia.org/wiki/Claude_(language_model)</a
+            >
+          </li>
+          <li>
+            Veracode「AI-Generated Code Poses Major Security Risks in Nearly
+            Half of All Development Tasks」2025-07-30　<a
+              href="https://www.veracode.com/press-release/ai-generated-code-poses-major-security-risks-in-nearly-half-of-all-development-tasks-veracode-research-reveals/"
+              >https://www.veracode.com/press-release/ai-generated-code-poses-major-security-risks-in-nearly-half-of-all-development-tasks-veracode-research-reveals/</a
+            >
+          </li>
+          <li>
+            InfoWorld「AI use among software developers grows but trust remains
+            an issue」（Stack Overflow Developer Survey 2025）　<a
+              href="https://infoworld.com/article/4031673/ai-use-among-software-developers-grows-but-trust-remains-an-issue-stack-overflow-survey.html"
+              >https://infoworld.com/article/4031673/ai-use-among-software-developers-grows-but-trust-remains-an-issue-stack-overflow-survey.html</a
+            >
+          </li>
+          <li>
+            VentureBeat「Stack Overflow data reveals the hidden productivity tax
+            of 'almost right' AI code」　<a
+              href="https://venturebeat.com/ai/stack-overflow-data-reveals-the-hidden-productivity-tax-of-almost-right-ai-code"
+              >https://venturebeat.com/ai/stack-overflow-data-reveals-the-hidden-productivity-tax-of-almost-right-ai-code</a
+            >
+          </li>
+          <li>
+            South China Morning Post「Over 40% of agentic AI projects forecast
+            to be scrapped by 2027」（Gartner 2025-06-25
+            発表の報道・二次情報）　<a
+              href="https://www.scmp.com/tech/tech-trends/article/3316025/over-40-agentic-ai-projects-forecast-be-scrapped-2027-due-lack-value"
+              >https://www.scmp.com/tech/tech-trends/article/3316025/over-40-agentic-ai-projects-forecast-be-scrapped-2027-due-lack-value</a
+            >
+          </li>
+          <li>
+            Virtualization Review「MIT Report Finds Most AI Business Investments
+            Fail」（二次情報）　<a
+              href="https://virtualizationreview.com/Articles/2025/08/19/MIT-Report-Finds-Most-AI-Business-Investments-Fail-Reveals-GenAI-Divide.aspx"
+              >https://virtualizationreview.com/Articles/2025/08/19/MIT-Report-Finds-Most-AI-Business-Investments-Fail-Reveals-GenAI-Divide.aspx</a
+            >
+          </li>
+          <li>
+            リスキリングメディア「シャドーAI利用46.5%─AI白書2026調査」（二次情報）　<a
+              href="https://reskilling.com/article/shadow-ai-reskilling-ai-white-paper-2026/"
+              >https://reskilling.com/article/shadow-ai-reskilling-ai-white-paper-2026/</a
+            >
+          </li>
+          <li>
+            AIエージェントによるデータ削除事故のまとめ（二次情報）　<a
+              href="https://ai-revolution.co.jp/media/ai-agent-data-deletion-incidents/"
+              >https://ai-revolution.co.jp/media/ai-agent-data-deletion-incidents/</a
+            >　／　Replit の事例報道　<a
+              href="https://yourstory.com/ai-story/replit-ai-deletes-production-database"
+              >https://yourstory.com/ai-story/replit-ai-deletes-production-database</a
+            >
+          </li>
+          <li>
+            トラベルボイス「AI事業者ガイドライン第1.2版の公表」2026-03-31　<a
+              href="https://www.travelvoice.jp/20260331-159520"
+              >https://www.travelvoice.jp/20260331-159520</a
+            >　／　PwC Japan 解説　<a
+              href="https://www.pwc.com/jp/ja/knowledge/column/ai-governance/ai-guideline-03.html"
+              >https://www.pwc.com/jp/ja/knowledge/column/ai-governance/ai-guideline-03.html</a
+            >
+          </li>
+          <li>
+            A社の社内記録：議事録・顧客マスタを集計した過去の分析（2026年7月29日・9月9日・10月4日版）、添付資料4点（サービスラインナップ、AI経営者クラブβ、生成AI活用顧問、生産性15.4人分）
+          </li>
+        </ol>
+      </section>
+
+      <footer>
+        作成：2026-10-31 ／
+        取引先名は伏せています。数字は出典ごとに調査対象と定義が違うため、単純に比べないでください。
+      </footer>
+    </main>
+  </body>
+</html>
